@@ -1,0 +1,129 @@
+#feed {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* 피드에 뜨는 게시글 부분인데
+    display:flex;는 다른 요소들 inline 속성으로 바꿔줌
+    align-items: center;은 게시물들 중간으로 정렬
+    flex-direction: column;은 세로로 정렬?*/
+}
+
+#feed .photo {
+  /* feed 전체 div 부분에 있는 영역을 꾸미는거 */
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 65px;
+  /*  */
+}
+
+.photo .photo__header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+
+  /* 이 부분은 사진 위에 있는 작은 프로필과 정보들 위치 */
+}
+
+.photo__header .photo__avatar {
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  /* feed에 뜨는 작은 프로필사진부분. */
+}
+
+.photo .photo__user-info .photo__author {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  /* 여긴 작은 프로필 사진 옆 글씨정보부분.*/
+}
+
+.photo > img {
+  max-width: 100%;
+  /* class=photo의 자식인 image 부분 크기설정
+   작은 프로필 사진은 이미 width 맥스값 설정했고
+   피드포토 부분에 적용한듯. */
+}
+
+.photo .photo__info {
+  padding: 15px 20px;
+  /* 45좋아요 이부분 글자 위치조정 */
+}
+
+.photo__actions {
+  margin-bottom: 15px;
+  font-size: 115%;
+  /* 하트 아이콘, 댓글달기 아이콘 크기 및 공간 조절  */
+}
+
+.photo__actions .photo__action:first-child {
+  margin-right: 15px;
+  /* 하트 이모티콘과 댓글달기 이모티콘 간갹 조절 */
+}
+
+.photo__actions .photo__action {
+  cursor: pointer;
+  /* 하트 이모티콘과 댓글달기 이모티콘에 마우스 가져다대면 포인터 바뀜 */
+}
+
+.photo .photo__likes {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+  /* 좋아요 개수 부분 진하게하고 공간조절 */
+}
+
+.photo .photo__add-comment-container {
+  margin-top: 15px;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* align-itmes는 add comment 맨 오른쪽 ... 가운데정렬 */
+  /* add comment 위 경계선 만들고 간격조정및 정렬 */
+}
+
+.photo__add-comment-container textarea {
+  width: 90%;
+  border: 0;
+  font-size: 14px;
+  resize: none;
+/* textarea 자체가 사용자가 크기 설정 가능한 요소인데 resize로 못하게 할 수 있음
+또 수직이나 가로로만 가능하게 할 수도 있음. */
+  height: 20px;
+  /* 쨋든 여기도 addcomment 창 */
+}
+
+.photo__add-comment-container textarea:focus,
+.photo__add-comment-container textarea:active {
+  outline: none;
+  /* outline은 border의 바깥 외곽선 */
+}
+
+.photo__add-comment-container i {
+  cursor: pointer;
+  /* addcomment 오른쪽에 있는 ... 에 커서 가져다대면 바뀜 */
+}
+
+.photo .photo__time-ago {
+  font-size: 10px;
+  text-transform: uppercase;
+  /* text-transform 대문자로 바꿔주는 기능. */
+  color: #999;
+  margin-top: 10px;
+  display: block;
+}
+
+.photo__comment {
+  margin-bottom: 10px;
+  /* 댓글 일부 보여지는거 위 아래 간격 조절 */
+}
+
+.photo__comments .photo__comment-author {
+  font-weight: 600;
+  /* 댓글 쓴 사람 이름 두꺼워짐 */
+}

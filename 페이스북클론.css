@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color:#18191a;
+  max-width:100%;
+}
+
+.navbar {
+  height:75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:1px solid gray;
+  padding:0 20px 0 20px;
+  background-color: #242526;
+  color:white;
+}
+
+ .navleft {
+display:flex;
+align-items: center;
+width:25% ;
+}
+
+.navbar_logo {
+width:45px;
+height:45px;
+margin-right:5px;
+}
+
+.navcenter i{
+  color: white;
+  /* nav에 있는 아이콘들 색 어케 다시 흰색으로 하지? */
+}
+
+.logosearch {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color:#a8abaf;
+}
+
+
+
+
+.searchbar{
+  padding-left: 20px;
+    color: #a8abaf;
+    background-color:#3a3b3c;
+    border:none;
+    width:100%;
+    padding: 5px 0px;
+    border-radius:10px;
+
+}
+
+.logosearch .icon {
+  position: absolute;
+  padding-left:3px;
+}
+
+.navcenter  {
+  display: flex;
+  width:50%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navcenter  i{
+  width:50%;
+  font-size:20px;
+  justify-content: center;
+
+
+}
+
+
+.navright {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+ .profile {
+display: flex;
+align-items: center;
+padding-right: 10px;
+
+
+}
+.profile span{
+  margin-left:10px;
+  font-size:20px;
+  margin-right:15px;
+}
+
+.options i{
+  padding-left: 20px;
+}
+
+#feed {
+  display: flex;
+  position: relative;
+  background-color:#18191a;
+  color:white;
+
+height:100%;
+
+
+
+}
+
+.feedleft{
+  display:flex;
+  flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-start;
+
+ width:25%;
+
+}
+
+.leftmenu  {
+  list-style-type: none;
+  padding-left:20px;
+  padding-bottom:20px;
+
+}
+
+ .leftup {
+  border-bottom:1px solid gray;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding-top:10px;
+}
+
+.lylic {
+padding-left:8px;
+font-weight: 500;
+text-align: center;
+}
+
+.london {
+  border-radius: 50%;
+}
+
+.feedcenter{
+  display: flex;
+  justify-content: center;
+  width:50%;
+  position:relative;
+ align-items: center;
+  height:100%;
+  flex-direction: column;
+  text-align: center;
+
+
+
+
+
+}
+.centertop {
+display:flex;
+flex-wrap: wrap;
+gap:10px;
+margin-top:20px;
+justify-content: center;
+
+
+
+}
+
+.centertop img {
+width:100px;
+height:170px;
+object-fit: cover;
+border-radius:10%;
+}
+
+.mediabox {
+  background-color: #242526;
+  display: flex;
+  justify-content: center;
+  margin-top:20px;
+  border: 1px solid none;
+  border-radius: 10px;
+  padding: auto;
+  margin: 40px 0px;
+
+}
+
+
+
+.opinion {
+display: flex;
+  align-items: center;
+}
+
+.mideprofile{
+  padding: 10px 10px;
+}
+
+.mind {
+  width: 100%;
+}
+
+.mindtext{
+  background-color:#3a3b3c;
+  border:none;
+  width:80%;
+  border-radius:10px;
+
+}
+
+.actions {
+  display:flex;
+
+}
+
+#hrhrhr {
+ width:90%;
+ margin: 0 auto;
+ border-color: gray;
+}
+
+.action {
+  padding: 10px 20px;}
+
+.reactions {
+  display: flex;
+  justify-content: space-between  ;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom:1px solid white;
+  background-color:#242526;
+}
+.photo {
+  background-color:#3a3b3c;
+}
+
+.emotions {
+  display:flex;
+  align-items: center;
+}
+.reaction {
+  width:25px;
+}
+
+
+
+  .news_feed {
+
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    background-color:#242526;
+
+  }
+.underbox {
+  border: 1px solid none;
+  width: 100%;
+}
+
+
+  #abc {
+    padding-left: 10px;
+  }
+
+}
+.newsfeedsub {
+
+}
+
+.newsfeedsubcom {
+  padding-top:20px;
+  background-color:#242526;
+}
+
+
+.small-profile {
+ display: flex;
+ text-align: left;
+ align-items: center;
+ background-color:#242526;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+}
+.name {
+  font-weight: 1000;
+}
+
+.lcs {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+  background-color:#242526;
+}
+
+
+
+.centerall{
+  width:80%;
+  height:60%;
+  border:1px;
+  padding:30px 30px;
+  display: flex;
+  flex-basis: 100px;
+
+  /* 원래 여기에 border-radius:20px; 있었음. */
+}
+
+
+.feedright {
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  width:25%;
+
+
+}
+
+.rightcall {
+  display:flex;
+ float:right;
+ flex-direction: column;
+ margin-left:100px;
+}
+
+
+.coder {
+  width:36px;
+  height:36px;
+}
+.your-page {
+  margin:10px 35px 10px;
+}
+
+
+ul {
+  list-style-type: none;
+  display:flex;
+  flex-direction: column;
+
+}
+
+
+
+.border {
+  width:100%;
+ border:1px solid gray;
+ margin:20px 20px;
+
+}

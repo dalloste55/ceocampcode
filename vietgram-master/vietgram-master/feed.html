@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feed | Vietgram</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="navigation__column">
+<!-- nav를 큰 전체 파트로 정하고 div로 로고 파트를 또 정해 -->
+            <a href="feed.html">
+                <!-- nav는 div랑 비슷한거. 이거 누르면 feed.html로 -->
+                <img src="images/logo.png" />
+            </a>
+        </div>
+        <!-- 로고 파트 끝 -->
+
+        <div class="navigation__column">
+          <!-- 이 div는 search fa icon이랑 text타입 넣은 파트 (큰 nav 안에 search 파트) -->
+            <i class="fa fa-search"></i>
+            <!-- fa에서 search 아이콘 찾아서 넣는거 -->
+            <input type="text" placeholder="Search">
+            <!-- text에 search 써있게 하는거 -->
+        </div>
+        <div class="navigation__column">
+            <ul class="navigations__links">
+              <!-- ul이 부모 그밑에 li자식 3마리 -->
+                <li class="navigation__list-item">
+                    <a href="explore.html" class="navigation__link">
+                        <i class="fa fa-compass fa-lg"></i>
+                        <!-- fa에서 가져온 compass 아이콘 누르면 explor.html로 이동 -->
+                    </a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#" class="navigation__link">
+                        <i class="fa fa-heart-o fa-lg"></i>
+                        <!-- fa에서 가져온 heart 아이콘 누르면 #으로 이동. -->
+                    </a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="profile.html" class="navigation__link">
+                        <i class="fa fa-user-o fa-lg"></i>
+                        <!-- fa에서 가져온 user아이콘 누르면 profile.html로 이동 -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="feed">
+        <div class="photo">
+            <header class="photo__header">
+                <img src="images/avatar.jpg" class="photo__avatar" />
+                <!-- feed에 뜨는 작은 프로필사진 -->
+                <div class="photo__user-info">
+                    <span class="photo__author">inthetiger</span>
+                    <span class="photo__location">Bestechung</span>
+                    <!-- 작은 프로필 사진 옆에 뜨는 두가지 정보들 -->
+                </div>
+            </header>
+            <img src="images/feedPhoto.jpg" />
+            <!-- 피드사진 -->
+            <div class="photo__info">
+                <div class="photo__actions">
+                    <span class="photo__action">
+                        <i class="fa fa-heart-o fa-lg"></i>
+                        <!-- 피드 좋아요 아이콘 및 영역구분 -->
+                    </span>
+                    <span class="photo__action">
+                        <i class="fa fa-comment-o fa-lg"></i>
+                        <!-- 피드 댓글달기 아이콘 및 영역구분 -->
+                    </span>
+                </div>
+                <!-- div로 좋아요,댓글달기 아이콘을 묶었다. -->
+                <span class="photo__likes">45 likes</span>
+                <!-- 좋아요 개수 -->
+                <ul class="photo__comments">
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">serranoarevalo</span> love this!
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">serranoarevalo</span> love this!
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">serranoarevalo</span> love this!
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">serranoarevalo</span> love this!
+                    </li>
+                </ul>
+                <!-- 댓글 아이디 코멘트 -->
+                <span class="photo__time-ago">2 hours ago</span>
+                <!-- 몇시간전 올린거다 -->
+                <div class="photo__add-comment-container">
+                    <textarea name="comment" placeholder="Add a comment..."></textarea>
+                    <i class="fa fa-ellipsis-h"></i>
+                    <!-- add coment 오른쪽 끝 ...아이콘 -->
+                </div>
+                <!-- add comments 부분을 div 묶어서 영역구분 -->
+            </div>
+        </div>
+        <div class="photo">
+            <header class="photo__header">
+                <img src="images/avatar.jpg" class="photo__avatar" />
+                <div class="photo__user-info">
+                    <span class="photo__author">inthetiger</span>
+                    <span class="photo__location">Bestechung</span>
+                </div>
+            </header>
+            <img src="images/feedPhoto.jpg" />
+            <div class="photo__info">
+                <div class="photo__actions">
+                    <span class="photo__action">
+                            <i class="fa fa-heart-o fa-lg"></i>
+                        </span>
+                    <span class="photo__action">
+                            <i class="fa fa-comment-o fa-lg"></i>
+                        </span>
+                </div>
+                <span class="photo__likes">45 likes</span>
+                <ul class="photo__comments">
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">serranoarevalo</span> love this!
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">serranoarevalo</span> love this!
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">serranoarevalo</span> love this!
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">serranoarevalo</span> love this!
+                    </li>
+                </ul>
+                <span class="photo__time-ago">2 hours ago</span>
+                <div class="photo__add-comment-container">
+                    <textarea name="comment" placeholder="Add a comment..."></textarea>
+                    <i class="fa fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+      <!-- footer 같은경우는 맨밑에 about us같은거 묶어서 정보 나타내는거. -->
+        <div class="footer__column">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#" class="footer__link">About Us</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Support</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Blog</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Press</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Api</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Jobs</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Privacy</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Terms</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Directory</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Language</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__column">
+            <span class="footer__copyright">© 2017 Vietgram</span>
+        </div>
+    </footer>
+</body>
+
+</html>

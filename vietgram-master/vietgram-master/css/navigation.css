@@ -1,0 +1,97 @@
+.navigation {
+  height: 75px;
+  background-color: white;
+  border-bottom: 1px solid #e6e6e6;
+  /* 인스타그램 로고 밑 경계선 */
+  display: flex;
+  /* 자식들 block을 다 inline 속성으로 바꾸는거. */
+  align-items: center;
+  /* 세로 중간 정렬 */
+  justify-content: space-between;
+  /* 각 요소들 간격 띄우는거 */
+  padding: 0 100px;
+  /* 상하는  0 좌우 100px */
+  margin-bottom: 60px;
+}
+
+.navigation .navigation__column:first-child img {
+  height: 45px;
+  /* 인스타그램 로고 사이즈 */
+}
+
+.navigation .navigations__links {
+  display: flex;
+  /* 오른쪽 상단 fa아이콘들 inline속성으로 만듬. */
+  padding: 0;
+  /* 어차피 align-items:center이라 100을넣든 뭘 넣든 고정 */
+  list-style-type: none;
+  /* list-style-type 목록 앞에 쓰이는거. li랑 비슷한데 모양이 다른거 */
+}
+
+.navigation .navigation__list-item {
+/* li들 class */
+  margin-left: 30px;
+  /* 그 오른쪽 위에 나침반 하트 프로필 아이콘  */
+  padding: 0 2px;
+  opacity: 0;
+  /* opacity: number | initial | inherit 문법이고 투명도 설정 */
+  animation: slideNavLink 0.5s ease-out forwards;
+}
+
+@keyframes slideNavLink {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+   /* trastform 은 애니메이션 각도 조정 transform: rotate (45deg); 이런식 */
+
+  }
+}
+
+.navigation .navigation__list-item:nth-child(2) {
+  animation-delay: 0.2s;
+  /* 애니메이션 딜레이니까 뭐,, */
+}
+
+.navigation .navigation__list-item:last-child {
+  animation-delay: 0.3s;
+}
+
+.navigation__link {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  /* 폰트사이즈가 걍 아이콘 사이즈라 보면 됨 */
+}
+
+.navigation__column input {
+  padding: 5px 0;
+  padding-left: 60px;
+  border: 0;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background: #fafafa;
+  font-size: 16px;
+  /* search 창 css */
+}
+
+.navigation__column input:focus {
+  outline: none;
+  /* outline은 border와는 다름. border은 레이아웃 넓이에 영향미치지만 outline은 안그럼 */
+  border: 1px solid #a9a9a9;
+  /* focus는 클릭했을때 바뀌는 모션*/
+}
+
+.navigation__column {
+  position: relative;
+  /* 부모가 relative하고 자식이 absolute 해야 부모를 기준으로 자식들이 움직인다. */
+}
+
+.navigation__column .fa-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}

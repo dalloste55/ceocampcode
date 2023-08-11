@@ -1,0 +1,111 @@
+#feed {
+   display:flex;
+   align-items: center;
+   flex-direction: column;
+   margin-top:45px;
+
+
+}
+
+#feed .feedphoto {
+  max-width:600px;
+  width:100%;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom:65px;
+}
+
+ #feed .feedhead {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+ }
+
+ .feedhead .smpt {
+   width:50px;
+   border-radius: 50%;
+   margin-right:10px;
+ }
+
+ .user-info .where .aboutwhere {
+   display: block;
+   font-weight: 600;
+   margin-bottom: 5px;
+ }
+
+.feedpt {
+  width:100%;
+}
+
+.photoinfo {
+ padding: 10px 15px;
+
+
+
+
+
+}
+
+.photoinfo .photoactions {
+ margin-bottom:15px;
+ font-size:140%;
+}
+
+.fa-gratipay {
+  margin-right:15px;
+}
+
+.photoaction {
+  cursor :pointer;
+
+}
+
+.likes {
+
+ font-size:15px;
+}
+.comments {
+  list-style-type: none;
+  padding: 0;
+}
+.comments .comment {
+align-items: center;
+justify-content: space-between;
+}
+
+.hoursago {
+  padding-left:15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.addcomments {
+  width:90%
+  margin-top: 15px;
+      border-top: 1px solid #e6e6e6;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+textarea {
+  width:100%;
+  resize:none;
+  outline: none;
+  border:0;
+  padding-top:0px;
+}
+
+
+.fa-info {
+cursor: pointer;
+
+padding-right:10px;
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container chat_container"> 
+        <header class="state_header">
+            <div class="state_header__column">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi fa-sm"></i>
+            </div>
+            <div class="state_header__column flex">
+                <span>12:54</span>
+            </div>
+            <div class="state_header__column flex">
+                <span>11%</span>
+                <i class="fas fa-battery-three-quarters fa-lg"></i>
+                <i class="fas fa-bolt fa-sm"></i>
+            </div>
+        </header>
+        <main>
+            <div class="theme_header flex talk">
+                <div class="theme_header__column">
+                    <a href="chats.html">
+                        <i class="fas fa-chevron-left fa-2x"></i>
+                    </a>
+                </div>
+                <div class="theme_header__column talker">
+                    해피
+                </div>
+                <div class="theme_header__column flex">
+                    <i class="fas fa-search fa-lg"></i>
+                    <i class="fas fa-bars  fa-lg"></i>
+                </div>
+            </div>
+            <div class="chat__timestamp">
+                2021-12-24 , 금
+            </div>
+            <div class="message-row">
+                <img src="img/KakaoTalk_20211227_184851187.jpg" />
+                <div class="message-row__content">
+                    <span class="message__author">해피</span>
+                    <div class="message__info">
+                        <span class="message__bubble">언니 안녕!</span>
+                        <span class="message__time">09:00</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="message-row message-row--own">
+                <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">해피야 사랑해 너 덕분에 내가 살 수있었어</span>
+                    <span class="message__time">09:00</span>
+                </div>
+                </div>
+            </div>
+            <div class="message-row message-row--own">
+                <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">해피야 사랑해 항상 고마워</span>
+                    <span class="message__time">09:00</span>
+                </div>
+                </div>
+            </div>
+            <div class="message-row message-row--own">
+                <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">다음 생에는 언니 자식으로 태어나줘!</span>
+                    <span class="message__time">09:00</span>
+                </div>
+                </div>
+            </div>
+        </main>
+      
+        <form class="reply">
+            <div class="reply__column">
+            <i class="far fa-plus-square fa-lg"></i>
+            </div>
+            <div class="reply__column">
+            <input type="text" placeholder="Write a message..." />
+            <i class="far fa-smile-wink fa-lg"></i>
+            <button>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            </div>
+        </form>
+  
+    </div>
+    <div id="no-mobile">
+        <span>Please use small device</span>
+    </div>
+</body>
+</html>
